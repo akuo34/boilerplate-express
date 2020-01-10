@@ -20,8 +20,7 @@ app.get('/', (req, res) => {
 
 
 /** 3) Serve an HTML file */
-app.use(_dirname + '/public', express.static);
-
+app.use('/assets', express.static(_dirname + '/public'));
 
 /** 4) Serve static assets  */
 
